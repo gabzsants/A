@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maior e menor dentre diversos valores</title>
+    <script>
+        function processar(){
+            let maior = f.n[0].value; //maior recebe o valor da primeira caixa
+            let menor = f.n[0].value; //menor recebe o valor da primeira caixa
+            //alert(f.n.length)
+            for(let i=1;i<f.n.length;i++){
+            //alert(f.n[1].value);
+            let x = parseInt(f.n[i].value); //valor atual da caixa de texto
+                if(x > maior) maior = x;
+                if(x < menor) menor = x;
+            }
+            f.saida_maior.value = maior;
+            f.saida_menor.value = menor;
+        }
+    </script>
+</head>
+<body>
+    <form name="f">
+        valor de n1: <input type="number" name="n"><br>
+        valor de n2: <input type="number" name="n"><br>
+        valor de n3: <input type="number" name="n"><br>
+        valor de n4: <input type="number" name="n"><br>
+        valor de n5: <input type="number" name="n"><br>
+        valor de n6: <input type="number" name="n"><br>
+        valor de n7: <input type="number" name="n"><br>
+        valor de n8: <input type="number" name="n"><br>
+        valor de n9: <input type="number" name="n"><br>
+        valor de n10: <input type="number" name="n"><br>
+        valor de n11: <input type="number" name="n"><br>
+        valor de n12: <input type="number" name="n"><br>
+        valor de n13: <input type="number" name="n"><br>
+        valor de n14: <input type="number" name="n"><br>
+        valor de n15: <input type="number" name="n"><br>
+        valor de n16: <input type="number" name="n"><br>
+        valor de n17: <input type="number" name="n"><br>
+        valor de n18: <input type="number" name="n"><br>
+        valor de n19: <input type="number" name="n"><br>
+        valor de n20: <input type="number" name="n"><br>
+        Maior: <input type="text" readonly name="saida_maior"><br>
+        Menor: <input type="text" readonly name="saida_menor"><br>
+        <input type="button" value="Processar" onclick="processar()">
+    </form>
+</body>
+</html>
